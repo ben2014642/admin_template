@@ -162,6 +162,25 @@ return [
             'addClass' => 'text-center align-middle'
         ],
     ],
+    'danhmuc' => [
+        'name' => [
+            'title' => 'name',
+            'orderable' => false,
+            'addClass' => 'align-middle'
+        ],
+        'status' => [
+            'title' => 'status',
+            'orderable' => false,
+            'addClass' => 'align-middle'
+        ],
+        'action' => [
+            'title' => 'action',
+            'orderable' => false,
+            'exportable' => false,
+            'printable' => false,
+            'addClass' => 'text-center align-middle'
+        ],
+    ],
     'post' => [
         'checkbox' => [
             'title' => 'choose',
@@ -186,6 +205,48 @@ return [
             'addClass' => 'align-middle'
         ],
         'categories' => [
+            'title' => 'category',
+            'orderable' => false,
+            'addClass' => 'align-middle'
+        ],
+        'created_at' => [
+            'title' => 'createdAt',
+            'orderable' => false,
+            'addClass' => 'align-middle',
+            'visible' => false
+        ],
+        'action' => [
+            'title' => 'action',
+            'orderable' => false,
+            'exportable' => false,
+            'printable' => false,
+            'addClass' => 'text-center align-middle'
+        ],
+    ],
+    'baiviet' => [
+        'checkbox' => [
+            'title' => 'choose',
+            'orderable' => false,
+            'addClass' => 'text-center',
+            'width' => '10px',
+            'footer' => '<input type="checkbox" class="check-all" />',
+        ],
+        'feature_image' => [
+            'title' => 'image',
+            'orderable' => false,
+            'addClass' => 'align-middle'
+        ],
+        'title' => [
+            'title' => 'title',
+            'orderable' => false,
+            'addClass' => 'align-middle'
+        ],
+        'status' => [
+            'title' => 'status',
+            'orderable' => false,
+            'addClass' => 'align-middle'
+        ],
+        'danhmuc' => [
             'title' => 'category',
             'orderable' => false,
             'addClass' => 'align-middle'

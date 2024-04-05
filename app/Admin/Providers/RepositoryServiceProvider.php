@@ -17,6 +17,8 @@ class RepositoryServiceProvider extends ServiceProvider
         'App\Admin\Repositories\Page\PageRepositoryInterface' => 'App\Admin\Repositories\Page\PageRepository',
         'App\Admin\Repositories\Tag\TagRepositoryInterface' => 'App\Admin\Repositories\Tag\TagRepository',
         'App\Admin\Repositories\Employee\EmployeeRepositoryInterface' => 'App\Admin\Repositories\Employee\EmployeeRepository',
+        'App\Admin\Repositories\BaiViet\BaiVietRepositoryInterface' => 'App\Admin\Repositories\BaiViet\BaiVietRepository',
+        'App\Admin\Repositories\DanhMuc\DanhMucRepositoryInterface' => 'App\Admin\Repositories\DanhMuc\DanhMucRepository',
     ];
     /**
      * Register services.

@@ -16,6 +16,8 @@ class ServiceServiceProvider extends ServiceProvider
         'App\Admin\Services\Page\PageServiceInterface' => 'App\Admin\Services\Page\PageService',
         'App\Admin\Services\Blog\Tag\TagServiceInterface' => 'App\Admin\Services\Blog\Tag\TagService',
         'App\Admin\Services\Employee\EmployeeServiceInterface' => 'App\Admin\Services\Employee\EmployeeService',
+        'App\Admin\Services\Blog\BaiViet\BaiVietServiceInterface' => 'App\Admin\Services\Blog\BaiViet\BaiVietService',
+        'App\Admin\Services\Blog\DanhMuc\DanhMucServiceInterface' => 'App\Admin\Services\Blog\DanhMuc\DanhMucService',
     ];
     /**
      * Register services.

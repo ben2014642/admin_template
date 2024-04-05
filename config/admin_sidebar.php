@@ -65,7 +65,7 @@ return [
         'sub' => [
             [
                 'title' => 'addPost',
-                'routeName' => 'admin.blog.post.create',
+                'routeName' => 'admin.blog.baiviet.create',
                 'icon' => '<i class="ti ti-plus"></i>',
                 'roles' => [
                     App\Enums\Admin\AdminRoles::SuperAdmin,
@@ -74,13 +74,13 @@ return [
             ],
             [
                 'title' => 'post',
-                'routeName' => 'admin.blog.post.index',
+                'routeName' => 'admin.blog.baiviet.index',
                 'icon' => '<i class="ti ti-list"></i>',
                 'roles' => [],
             ],
             [
                 'title' => 'category',
-                'routeName' => 'admin.blog.category.index',
+                'routeName' => 'admin.blog.danhmuc.index',
                 'icon' => '<i class="ti ti-list"></i>',
                 'roles' => [
                     App\Enums\Admin\AdminRoles::SuperAdmin,

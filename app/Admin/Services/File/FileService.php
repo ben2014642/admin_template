@@ -11,7 +11,7 @@ class FileService
     private $folder = '/';
 
     private $folderPrefix = 'public/uploads/';
-    
+
     private $file;
 
     private $instance;
@@ -46,7 +46,7 @@ class FileService
     }
     public function uploadFilepondEncode(){
         $file = json_decode($this->file, true);
-        
+
         return $this->uploadFileBase64($file);
     }
 
@@ -57,12 +57,12 @@ class FileService
             return $this;
         }
         return $this->uploadFileBase64($file);
-        
+
     }
 
     private function uploadFileBase64($file){
         $fileContent = base64_decode($file['data']);
-        
+
         $pathFile = $this->folder.uniqid_real() . '.' . pathinfo($file['name'], PATHINFO_EXTENSION);
 
         Storage::disk($this->disk)->put($pathFile, $fileContent);
@@ -84,7 +84,7 @@ class FileService
         }
         return $this;
     }
-    
+
     public function deleteSimpleFiles(array $files){
 
         $files = array_map(function($value){

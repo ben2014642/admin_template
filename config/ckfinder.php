@@ -29,8 +29,8 @@ $config['authentication'] = '\App\Admin\Http\Middleware\CustomCKFinderAuth';
 /*============================ License Key ============================================*/
 // http://docs.cksource.com/ckfinder3-php/configuration.html#configuration_options_licenseKey
 
-$config['licenseName'] = 'localhost';
-$config['licenseKey']  = '3RJRTTHHCDVVGDCDBEG347AMAV6AY';
+$config['licenseName'] = 'localhost/admin_template';
+$config['licenseKey']  = 'ESHS3DJSXJCB4Y7865K4TLC8XGKPD';
 
 /*============================ CKFinder Internal Directory ============================*/
 // http://docs.cksource.com/ckfinder3-php/configuration.html#configuration_options_privateDir
@@ -83,7 +83,7 @@ $config['backends']['default'] = array(
     'name'         => 'default',
     'adapter'      => 'local',
     // 'baseUrl'      => url('/').'/public/uploads/',
-    'baseUrl'      => env('APP_URL').'/public/uploads/',
+    'baseUrl'      => env('APP_URL').'/uploads/',
     'root'         => public_path('/uploads/'),
     'chmodFiles'   => 0777,
     'chmodFolders' => 0755,

@@ -7,6 +7,7 @@ class RepositoryServiceProvider extends ServiceProvider
 {
     protected $repositories = [
         'App\Repositories\Setting\SettingRepositoryInterface' => 'App\Repositories\Setting\SettingRepository',
+        'App\Repositories\Blog\BaiVietRepositoryInterface' => 'App\Repositories\Blog\BaiVietRepository',
     ];
 
     /**
